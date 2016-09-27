@@ -1,0 +1,171 @@
+[
+    {
+        "name": "A1",
+        "localVariable": [
+            {
+                "name": "st1",
+                "inputs": [
+                    "data1"
+                ],
+                "outputs": [
+                    "data10"
+                ]
+            }
+        ],
+        "inputs": [
+            "data1"
+        ],
+        "outputs": [
+            "data2",
+            "data10"
+        ],
+        "IOstreams": {
+            "data2": [
+                "data1"
+            ],
+            "data10": [
+                "data1"
+            ]
+        },
+        "DualIOstreams": {}
+    },
+    {
+        "name": "A2",
+        "localVariable": [
+            {
+                "name": "st2",
+                "inputs": [
+                    "data3"
+                ],
+                "outputs": [
+                    "data12",
+                    "data4"
+                ]
+            }
+        ],
+        "inputs": [
+            "data2",
+            "data3"
+        ],
+        "outputs": [
+            "data4",
+            "data5",
+            "data11",
+            "data12"
+        ],
+        "IOstreams": {
+            "data5": [
+                "data2"
+            ],
+            "data4": [
+                "data2",
+                "data3"
+            ],
+            "data12": [
+                "data3"
+            ],
+            "data11": [
+                "data2"
+            ]
+        },
+        "DualIOstreams": {
+            "data3": [
+                "data6",
+                "data7"
+            ],
+            "data2": [
+                "data1"
+            ]
+        }
+    },
+    {
+        "name": "A3",
+        "localVariable": [],
+        "inputs": [
+            "data4",
+            "data5"
+        ],
+        "outputs": [
+            "data6",
+            "data7"
+        ],
+        "IOstreams": {
+            "data7": [
+                "data5"
+            ],
+            "data6": [
+                "data4"
+            ]
+        },
+        "DualIOstreams": {
+            "data5": [
+                "data2"
+            ],
+            "data4": [
+                "data2",
+                "data3"
+            ]
+        }
+    },
+    {
+        "name": "A4",
+        "localVariable": [
+            {
+                "name": "st4",
+                "inputs": [
+                    "data6",
+                    "data7"
+                ],
+                "outputs": [
+                    "data3"
+                ]
+            }
+        ],
+        "inputs": [
+            "data6",
+            "data7",
+            "data13"
+        ],
+        "outputs": [
+            "data3",
+            "data8"
+        ],
+        "IOstreams": {
+            "data8": [
+                "data13"
+            ],
+            "data3": [
+                "data6",
+                "data7"
+            ]
+        },
+        "DualIOstreams": {
+            "data7": [
+                "data5"
+            ],
+            "data6": [
+                "data4"
+            ]
+        }
+    },
+    {
+        "name": "A5",
+        "localVariable": [],
+        "inputs": [
+            "data8"
+        ],
+        "outputs": [
+            "data9"
+        ],
+        "IOstreams": {
+            "data9": [
+            "data8"
+            ]
+        },
+        "DualIOstreams": {
+            "data8": [
+                "data13"
+            ]
+        }
+    }
+]

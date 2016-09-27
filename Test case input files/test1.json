@@ -1,0 +1,105 @@
+[
+    {
+        "name": "A1",
+        "localVariable": [
+            {
+                "name": "st1",
+                "inputs": [
+                    "data1"
+                ],
+                "outputs": [
+                    "data2"
+                ]
+            }
+        ],
+        "inputs": [
+            "data1",
+            "data6"
+        ],
+        "outputs": [
+            "data2"
+        ],
+        "IOstreams": {
+            "data2": [
+                "data1",
+                "data6"
+            ]
+        },
+        "DualIOstreams": {
+            "data6": [
+                "data4"
+            ]
+        }
+    },
+    {
+        "name": "A2",
+        "localVariable": [
+            {
+                "name": "st2",
+                "inputs": [
+                    "data2"
+                ],
+                "outputs": [
+                    "data3",
+                    "data4"
+                ]
+            }
+        ],
+        "inputs": [
+            "data2"
+        ],
+        "outputs": [
+            "data3",
+            "data4"
+        ],
+        "IOstreams": {
+            "data3": [
+                "data2"
+            ],
+            "data4": [
+                "data2"
+            ]
+        },
+        "DualIOstreams": {
+            "data2": [
+                "data1",
+                "data6"
+            ]
+        }
+    },
+    {
+        "name": "A3",
+        "localVariable": [
+            {
+                "name": "st3",
+                "inputs": [
+                    "data4"
+                ],
+                "outputs": [
+                    "data5",
+                    "data6"
+                ]
+            }
+        ],
+        "inputs": [
+            "data4"
+        ],
+        "outputs": [
+            "data5",
+            "data6"
+        ],
+        "IOstreams": {
+            "data6": [
+                "data4"
+            ],
+            "data5": [
+                "data4"
+            ]
+        },
+        "DualIOstreams": {
+            "data4": [
+                "data2"
+            ]
+        }
+    }
+]
